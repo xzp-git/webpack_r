@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "builds": "webpack --env=development",
-    "build": "cross-env NODE_ENV=production webpack",
-    "dev": "cross-env NODE_ENV=development webpack serve",
-    "start": "webpack serve"
+    "build": "webpack --mode=production",
+    "dev": "webpack serve --mode=development"
   },
   "repository": {
     "type": "git",
@@ -21,7 +19,6 @@
   },
   "homepage": "https://github.com/xzp-git/webpack_r#readme",
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "sass": "^1.49.9",
